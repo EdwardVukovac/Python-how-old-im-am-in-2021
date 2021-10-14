@@ -1,0 +1,81 @@
+# Python how old im am in 2021
+
+# Made by Edward Vukovac
+# 2021/9/30
+
+# Print how old im am in 2021
+
+print("How old im am in 2021")
+
+# PROBLEM SOLVING
+# We need the birth year, month and day to get the age
+# we need three inputs
+# birth_year, birth_month, birth_day
+
+# To get the age we need also need today year, month and day
+# we need three inputs
+# today_year, today_month, today_day
+
+# And to get the age we need to subtract the date-today by the birth-date
+# today_year - birth_year
+# today_month - birth_month
+# today_day - birth_day
+# we get age_year, age_month and age_day
+
+
+# Example
+# Person was born on 2002/02/02 and today date is 2021/09/30
+# we get the time from the user when the user was born and the date today
+
+
+# the year the person was born
+# Input birth year
+birth_year = int(input("Birth year: "))  # 2002 year
+
+# Input birth month
+birth_month = int(input("Birth month: "))  # 2 month
+
+# Input birth day
+birth_day = int(input("Birth day: "))  # 2 day
+
+
+# To get the age we need today year, month and day
+# Input year
+date_year = int(input("Today's year: "))  # 2021 year
+
+# Input month
+date_month = int(input("Today's month: "))  # 9 month
+
+# Input day
+date_day = int(input("Today's day: "))  # 30 day
+
+
+# And to get the age
+# years old
+age_year = date_year - birth_year
+
+# months old
+age_month = date_month - birth_month
+
+# days old
+age_day = date_day - birth_day
+
+
+print(f"You are {age_year} years {age_month} months {age_day} days old")
+
+
+# we also want an error message if a non-positive integer is given
+
+if birth_year <= 0 or birth_month <= 0 or birth_day <= 0 or date_year <= 0 or date_month <= 0 or date_day <= 0:
+    print("You entered a non positive integer 0 or less, so you may get the wrong answer")
+
+
+# Output:
+# How old im am in 2021
+# Birth year: 2002
+# Birth month: 2
+# Birth day: 2
+# Today's year: 2021
+# Today's month: 9
+# Today's day 30
+# You are 19 years 7 months 28 days old
